@@ -66,3 +66,30 @@ h2 {
 .button:visited {
     color: #0f172a;
 }
+.projects {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #7dd3fc;
+}
