@@ -63,3 +63,6 @@ h2 {
 .button:hover {
     background-color: #7dd3fc;
 }
+.button:visited {
+    color: #0f172a;
+}
