@@ -12,10 +12,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
+    box-sizing: border-box;
 }
 
 .hero {
     max-width: 700px;
+    width: 100%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.04);
     padding: 50px 35px;
@@ -29,7 +31,7 @@ h1 {
     color: #38bdf8;
 }
 
-h2 {
+.hero h2 {
     margin: 0;
     font-size: 24px;
     font-weight: 600;
@@ -64,9 +66,11 @@ h2 {
 .button:hover {
     background-color: #7dd3fc;
 }
+
 .button:visited {
     color: #0f172a;
 }
+
 .projects {
     margin-top: 50px;
     text-align: center;
@@ -77,10 +81,11 @@ h2 {
 .projects h2 {
     font-size: 32px;
     margin-bottom: 30px;
+    color: #e2e8f0;
 }
 
 .project-card {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     padding: 30px;
     border-radius: 12px;
     max-width: 700px;
@@ -90,10 +95,23 @@ h2 {
 
 .project-card h3 {
     color: #38bdf8;
+    margin-top: 0;
+}
+
+.project-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cbd5e1;
 }
 
 .project-card a {
     display: inline-block;
     margin-top: 15px;
     color: #7dd3fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }
