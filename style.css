@@ -115,7 +115,13 @@ h1 {
 .project-card a:hover {
     text-decoration: underline;
 }
+.stack-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
 .stack-list i {
-    font-size: 50px;
-    margin: 10px;
+    font-size: 60px;
 }
