@@ -178,3 +178,11 @@ h1 {
 .footer a:hover {
     text-decoration: underline;
 }
+.footer a {
+    color: #7dd3fc;
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: #7dd3fc;
+}
