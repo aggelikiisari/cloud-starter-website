@@ -1,80 +1,76 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, #08142b 0%, #0f172a 100%);
-    color: white;
+    font-family: Inter, Arial, sans-serif;
+    background: linear-gradient(180deg, #0a0f1f 0%, #0f172a 100%);
+    color: #e2e8f0;
 }
 
+/* CONTAINER */
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 60px 20px;
-    box-sizing: border-box;
 }
 
-.hero,
-.project-card,
-.deployment-card,
-.architecture-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+/* GENERAL SECTIONS */
+section {
+    margin-top: 60px;
 }
 
+/* HERO */
 .hero {
-    max-width: 700px;
-    width: 100%;
     text-align: center;
-    padding: 50px 35px;
+    padding: 60px 30px;
     border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.eyebrow {
+    color: #7dd3fc;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h1 {
-    margin: 0 0 12px;
-    font-size: 52px;
+    margin: 10px 0;
+    font-size: 48px;
     color: #38bdf8;
-}
-
-.hero h2,
-.projects h2,
-.stack h2,
-.deployment h2,
-.architecture h2 {
-    color: #e2e8f0;
 }
 
 .hero h2 {
     margin: 0;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .subtitle {
-    margin-top: 14px;
-    font-size: 20px;
+    margin-top: 12px;
+    font-size: 18px;
     color: #7dd3fc;
 }
 
 .description {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.6;
     color: #cbd5e1;
 }
 
+/* BUTTONS */
+.hero-buttons {
+    margin-top: 25px;
+}
+
 .button {
     display: inline-block;
-    margin-top: 28px;
-    padding: 14px 24px;
+    margin: 10px;
+    padding: 12px 22px;
     background-color: #38bdf8;
     color: #0f172a;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 10px;
     transition: 0.2s ease;
 }
@@ -83,91 +79,114 @@ h1 {
     background-color: #7dd3fc;
 }
 
-.button:visited {
+.secondary-button {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.secondary-button:hover {
+    background: #38bdf8;
     color: #0f172a;
 }
 
-.projects,
-.stack,
-.deployment,
-.architecture {
-    margin-top: 35px;
+/* HEADINGS */
+h2 {
     text-align: center;
-    max-width: 700px;
-    width: 100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #e2e8f0;
 }
 
-.projects h2,
-.stack h2,
-.deployment h2,
-.architecture h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+/* CARDS */
+.info-card,
+.project-card,
+.deployment-card {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* PROJECT GRID */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .project-card h3 {
     color: #38bdf8;
-    margin-top: 0;
 }
 
-.project-card p,
-.deployment-card p,
-.architecture-card p {
-    font-size: 18px;
-    line-height: 1.6;
+.project-card p {
     color: #cbd5e1;
+    line-height: 1.6;
 }
 
 .project-meta {
-    margin-top: 18px;
+    margin-top: 12px;
     color: #7dd3fc;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
 }
 
-.stack-list,
+/* SKILLS GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-card h3 {
+    margin-top: 0;
+    color: #38bdf8;
+}
+
+/* STACK ICONS */
+.stack-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.stack-list i {
+    font-size: 48px;
+    transition: transform 0.2s ease;
+}
+
+.stack-list i:hover {
+    transform: scale(1.2);
+}
+
+/* WORKFLOW */
 .workflow,
 .architecture-diagram {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 12px;
     margin-top: 20px;
-}
-
-.stack-list i {
-    font-size: 60px;
 }
 
 .workflow span,
 .architecture-diagram span {
     background: rgba(255, 255, 255, 0.06);
     color: #7dd3fc;
-    padding: 12px 18px;
+    padding: 10px 16px;
     border-radius: 999px;
-    font-weight: bold;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.architecture-source {
-    margin-top: 20px;
-}
-
-.architecture-source p {
-    margin: 8px 0;
-    font-size: 16px;
-    color: #cbd5e1;
-}
+/* FOOTER */
 .footer {
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
+    font-size: 14px;
     color: #94a3b8;
-    font-size: 15px;
-    padding-bottom: 20px;
-}
-
-.footer p {
-    margin: 8px 0;
 }
 
 .footer a {
@@ -178,11 +197,18 @@ h1 {
 .footer a:hover {
     text-decoration: underline;
 }
-.footer a {
-    color: #7dd3fc;
-    text-decoration: none;
-}
 
-.footer a:visited {
-    color: #7dd3fc;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
 }
