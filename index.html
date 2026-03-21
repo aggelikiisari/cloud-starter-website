@@ -3,189 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angeliki Isari | Static Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Angeliki Isari | Cloud Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
 
-        <section class="hero">
-            <p class="eyebrow">Static Portfolio Website</p>
-            <h1>Angeliki Isari</h1>
-            <h2>Digital Industry Technologies Student</h2>
-            <p class="subtitle">Aspiring Cloud Engineer • Static Web Portfolio • GitHub Pages Deployment</p>
+    <div class="noise"></div>
 
-            <p class="description">
-                Welcome to my static portfolio website. This project presents my profile, technical interests,
-                selected work, and development workflow as I continue building toward a career in Cloud Computing
-                and Software Engineering.
+    <!-- NAV -->
+    <nav class="nav">
+        <span class="nav-logo">AI</span>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-eyebrow">
+            <span class="dot"></span>
+            <span>Available for opportunities</span>
+        </div>
+
+        <div class="hero-title-block">
+            <h1 class="hero-name">ANGELIKI<br><em>ISARI</em></h1>
+            <div class="hero-aside">
+                <p class="hero-role">Cloud Engineer<br>& DevOps</p>
+                <p class="hero-year">2025</p>
+            </div>
+        </div>
+
+        <div class="hero-bottom">
+            <p class="hero-desc">
+                Student at NKUA's Digital Industry Technologies dept. Building cloud-native systems, 
+                automating infrastructure, and shipping secure pipelines on AWS.
             </p>
-
-            <div class="hero-buttons">
-                <a class="button" href="https://github.com/aggelikiisari/cloud-starter-website" target="_blank">
-                    View Source Code
-                </a>
-                <a class="button secondary-button" href="https://aggeliki.dev" target="_blank">
-                    Visit Featured Cloud Project
-                </a>
+            <div class="hero-cta">
+                <a href="https://github.com/aggelikiisari" target="_blank" class="btn-primary">GitHub ↗</a>
+                <a href="https://aggeliki.dev" target="_blank" class="btn-ghost">aggeliki.dev ↗</a>
             </div>
-        </section>
+        </div>
 
-        <section class="about">
-            <h2>About Me</h2>
-            <div class="info-card">
+        <div class="hero-marquee">
+            <div class="marquee-track">
+                <span>AWS</span><span>·</span>
+                <span>Bash</span><span>·</span>
+                <span>Terraform</span><span>·</span>
+                <span>Linux</span><span>·</span>
+                <span>GitHub Actions</span><span>·</span>
+                <span>Docker</span><span>·</span>
+                <span>DevSecOps</span><span>·</span>
+                <span>CloudFront</span><span>·</span>
+                <span>S3</span><span>·</span>
+                <span>VPC</span><span>·</span>
+                <span>AWS</span><span>·</span>
+                <span>Bash</span><span>·</span>
+                <span>Terraform</span><span>·</span>
+                <span>Linux</span><span>·</span>
+                <span>GitHub Actions</span><span>·</span>
+                <span>Docker</span><span>·</span>
+                <span>DevSecOps</span><span>·</span>
+                <span>CloudFront</span><span>·</span>
+                <span>S3</span><span>·</span>
+                <span>VPC</span><span>·</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="section-label">01 — About</div>
+        <div class="about-grid">
+            <div class="about-headline">
+                <h2>Building the<br><em>infrastructure</em><br>of tomorrow.</h2>
+            </div>
+            <div class="about-text">
                 <p>
-                    I am a student in the Department of Digital Industry Technologies at the National and Kapodistrian
-                    University of Athens, with growing interest in Cloud Computing, DevOps, Linux, and modern web technologies.
+                    I'm a Digital Industry Technologies student at the National and Kapodistrian University 
+                    of Athens. My work lives at the intersection of cloud infrastructure, security automation, 
+                    and developer tooling.
                 </p>
-
                 <p>
-                    This website is designed as a static portfolio project, focused on clean presentation, responsive layout,
-                    and deployment through GitHub Pages. It represents an important step in my journey from foundational
-                    web development to more advanced cloud-based systems.
+                    I'm drawn to systems that are fast, auditable, and resilient — the kind of architecture 
+                    that scales without surprises. My technical depth is in AWS, Bash scripting, and network 
+                    security, and I'm actively building a portfolio that reflects real cloud engineering work.
                 </p>
-            </div>
-        </section>
-
-        <section class="projects">
-            <h2>Selected Projects</h2>
-
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Static Portfolio Website</h3>
-                    <p>
-                        A responsive personal portfolio website built to showcase my background, technical interests,
-                        and development workflow.
-                    </p>
-                    <p class="project-meta">
-                        HTML • CSS • JavaScript • Git • GitHub Pages
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Featured Cloud Project – aggeliki.dev</h3>
-                    <p>
-                        My more advanced cloud-focused website, where I experiment with AWS services, cloud-native ideas,
-                        and continuous iterative improvement.
-                    </p>
-                    <p class="project-meta">
-                        AWS • CloudFront • S3 • Serverless Components
-                    </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Cloud Projects<br>In Progress</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">AWS</span>
+                        <span class="stat-label">Primary<br>Cloud Platform</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">∞</span>
+                        <span class="stat-label">Bash Scripts<br>Written</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="skills">
-            <h2>Skills & Tools</h2>
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="section-label">02 — Projects</div>
+        <h2 class="section-title">Selected Work</h2>
 
-            <div class="skills-grid">
-                <div class="info-card">
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, JavaScript, responsive layout design</p>
+        <div class="project-list">
+
+            <div class="project-item">
+                <div class="project-number">001</div>
+                <div class="project-content">
+                    <div class="project-top">
+                        <h3>AWS Infrastructure Auditor</h3>
+                        <span class="project-status in-progress">In Progress</span>
+                    </div>
+                    <p>Bash-based security misconfiguration scanner for AWS environments. Detects open S3 buckets, 
+                    permissive IAM roles, exposed security groups, and unencrypted resources.</p>
+                    <div class="project-tags">
+                        <span>Bash</span><span>AWS CLI</span><span>IAM</span><span>S3</span><span>Security</span>
+                    </div>
                 </div>
-
-                <div class="info-card">
-                    <h3>Cloud & Deployment</h3>
-                    <p>GitHub Pages, static hosting, deployment workflow, cloud fundamentals</p>
-                </div>
-
-                <div class="info-card">
-                    <h3>Programming</h3>
-                    <p>C, Python, Bash, problem solving through university and personal projects</p>
-                </div>
-
-                <div class="info-card">
-                    <h3>Tools</h3>
-                    <p>Git, GitHub, Linux, VS Code, version control workflow</p>
-                </div>
+                <a href="https://github.com/aggelikiisari" target="_blank" class="project-arrow">↗</a>
             </div>
-        </section>
 
-        <section class="stack">
-            <h2>Technology Icons</h2>
-
-            <div class="stack-list">
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
-                <i class="devicon-javascript-plain colored"></i>
-                <i class="devicon-git-plain colored"></i>
-                <i class="devicon-github-original colored"></i>
-                <i class="devicon-linux-plain colored"></i>
-                <i class="devicon-c-plain colored"></i>
-                <i class="devicon-python-plain colored"></i>
-                <i class="devicon-amazonwebservices-original colored"></i>
-            </div>
-        </section>
-
-        <section class="deployment">
-            <h2>Development & Deployment Workflow</h2>
-
-            <div class="deployment-card">
-                <p>
-                    This project demonstrates a simple and practical static website workflow using Git, GitHub, and GitHub Pages.
-                    Every update to the website follows a structured development process:
-                </p>
-
-                <div class="workflow">
-                    <span>Plan →</span>
-                    <span>Build in VS Code →</span>
-                    <span>Git Commit →</span>
-                    <span>Push to GitHub →</span>
-                    <span>Deploy with GitHub Pages</span>
+            <div class="project-item">
+                <div class="project-number">002</div>
+                <div class="project-content">
+                    <div class="project-top">
+                        <h3>Automated VPC + Bastion Host</h3>
+                        <span class="project-status planned">Planned</span>
+                    </div>
+                    <p>Infrastructure-as-code setup provisioning a complete VPC architecture with public/private 
+                    subnets, NAT gateway, and a hardened bastion host using Terraform and Bash automation.</p>
+                    <div class="project-tags">
+                        <span>Terraform</span><span>Bash</span><span>VPC</span><span>EC2</span><span>Networking</span>
+                    </div>
                 </div>
+                <a href="https://github.com/aggelikiisari" target="_blank" class="project-arrow">↗</a>
+            </div>
 
-                <p style="margin-top: 25px;">
-                    From an architectural perspective, the website is delivered as a static web application.
-                    Users access the site through GitHub Pages hosting, which serves the HTML, CSS, and JavaScript files publicly on the web.
-                </p>
-
-                <div class="architecture-diagram">
-                    <span>User →</span>
-                    <span>Internet →</span>
-                    <span>GitHub Pages →</span>
-                    <span>Static Portfolio Website</span>
+            <div class="project-item">
+                <div class="project-number">003</div>
+                <div class="project-content">
+                    <div class="project-top">
+                        <h3>DevSecOps CI/CD Pipeline</h3>
+                        <span class="project-status planned">Planned</span>
+                    </div>
+                    <p>End-to-end secure pipeline deploying containerized applications to AWS ECS with automated 
+                    security scanning via Trivy and Checkov on every commit.</p>
+                    <div class="project-tags">
+                        <span>GitHub Actions</span><span>Trivy</span><span>Checkov</span><span>ECS</span><span>Docker</span>
+                    </div>
                 </div>
+                <a href="https://github.com/aggelikiisari" target="_blank" class="project-arrow">↗</a>
+            </div>
 
-                <div class="architecture-source">
-                    <p><strong>Source Code:</strong> GitHub Repository</p>
-                    <p><strong>Hosting:</strong> GitHub Pages</p>
-                    <p><strong>Type:</strong> Static Web Application</p>
+            <div class="project-item">
+                <div class="project-number">004</div>
+                <div class="project-content">
+                    <div class="project-top">
+                        <h3>Static Portfolio — aggeliki.dev</h3>
+                        <span class="project-status live">Live</span>
+                    </div>
+                    <p>Cloud-hosted personal portfolio deployed on AWS with CloudFront, S3 static hosting, 
+                    and serverless components. Custom domain with HTTPS.</p>
+                    <div class="project-tags">
+                        <span>AWS S3</span><span>CloudFront</span><span>HTML/CSS</span><span>GitHub Pages</span>
+                    </div>
                 </div>
+                <a href="https://aggeliki.dev" target="_blank" class="project-arrow">↗</a>
             </div>
-        </section>
 
-        <section class="goals">
-            <h2>Current Focus</h2>
-            <div class="info-card">
-                <p>
-                    I am currently strengthening my foundation in cloud technologies, software engineering, and deployment workflows
-                    through hands-on projects. My goal is to continue evolving from static web deployments toward more advanced
-                    cloud-native and serverless architectures.
-                </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="section-label">03 — Skills</div>
+        <h2 class="section-title">Stack & Tools</h2>
+
+        <div class="skills-columns">
+            <div class="skill-group">
+                <h4>Cloud & Infrastructure</h4>
+                <ul>
+                    <li>Amazon Web Services (EC2, S3, IAM, VPC, CloudFront, ECS)</li>
+                    <li>Terraform — Infrastructure as Code</li>
+                    <li>GitHub Pages, static hosting workflows</li>
+                </ul>
             </div>
-        </section>
-
-        <section class="contact">
-            <h2>Connect</h2>
-            <div class="info-card">
-                <p><strong>GitHub:</strong> <a href="https://github.com/aggelikiisari" target="_blank">github.com/aggelikiisari</a></p>
-                <p><strong>Email:</strong> <a href="mailto:aggeliki.isari@gmail.com">aggeliki.isari@gmail.com</a></p>
-                <p><strong>Featured Website:</strong> <a href="https://aggeliki.dev" target="_blank">aggeliki.dev</a></p>
+            <div class="skill-group">
+                <h4>DevOps & Automation</h4>
+                <ul>
+                    <li>Bash scripting — automation & security tooling</li>
+                    <li>GitHub Actions — CI/CD pipelines</li>
+                    <li>Docker — containerization</li>
+                    <li>Trivy, Checkov — security scanning</li>
+                </ul>
             </div>
-        </section>
+            <div class="skill-group">
+                <h4>Systems & Networking</h4>
+                <ul>
+                    <li>Linux administration</li>
+                    <li>Network security fundamentals</li>
+                    <li>VPC design, subnetting, routing</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4>Programming</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>HTML, CSS, JavaScript</li>
+                </ul>
+            </div>
+        </div>
 
-        <footer class="footer">
-            <p>Static Portfolio Website • Built with HTML, CSS, JavaScript, GitHub and GitHub Pages</p>
-            <p>
-                GitHub:
+        <div class="tech-icons">
+            <i class="devicon-amazonwebservices-original colored" title="AWS"></i>
+            <i class="devicon-terraform-plain colored" title="Terraform"></i>
+            <i class="devicon-bash-plain" title="Bash"></i>
+            <i class="devicon-docker-plain colored" title="Docker"></i>
+            <i class="devicon-github-original" title="GitHub"></i>
+            <i class="devicon-linux-plain" title="Linux"></i>
+            <i class="devicon-python-plain colored" title="Python"></i>
+            <i class="devicon-c-plain colored" title="C"></i>
+            <i class="devicon-git-plain colored" title="Git"></i>
+            <i class="devicon-vscode-plain colored" title="VS Code"></i>
+        </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="workflow-section">
+        <div class="section-label">04 — Workflow</div>
+        <h2 class="section-title">How I Deploy</h2>
+        <div class="workflow-steps">
+            <div class="step">
+                <span class="step-n">01</span>
+                <span class="step-label">Plan</span>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <span class="step-n">02</span>
+                <span class="step-label">Build in VS Code</span>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <span class="step-n">03</span>
+                <span class="step-label">Git Commit</span>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <span class="step-n">04</span>
+                <span class="step-label">Push to GitHub</span>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <span class="step-n">05</span>
+                <span class="step-label">Deploy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <div class="section-label">05 — Contact</div>
+            <h2 class="contact-heading">Let's<br><em>connect.</em></h2>
+            <div class="contact-links">
                 <a href="https://github.com/aggelikiisari" target="_blank">
-                    github.com/aggelikiisari
+                    <span>GitHub</span>
+                    <span class="link-sub">github.com/aggelikiisari ↗</span>
                 </a>
-            </p>
-        </footer>
+                <a href="mailto:aggeliki.isari@gmail.com">
+                    <span>Email</span>
+                    <span class="link-sub">aggeliki.isari@gmail.com ↗</span>
+                </a>
+                <a href="https://aggeliki.dev" target="_blank">
+                    <span>Website</span>
+                    <span class="link-sub">aggeliki.dev ↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <footer class="footer">
+        <span>© 2025 Angeliki Isari</span>
+        <span>Built with HTML · CSS · GitHub Pages</span>
+    </footer>
+
 </body>
 </html>
