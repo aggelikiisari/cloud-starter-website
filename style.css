@@ -453,6 +453,12 @@ a { color: inherit; text-decoration: none; }
     display: inline-block;
 }
 
+.project-arrow.muted {
+    opacity: 0.2;
+    cursor: default;
+    pointer-events: none;
+}
+
 .project-item:hover .project-arrow {
     color: var(--accent);
     transform: translate(3px, -3px);
